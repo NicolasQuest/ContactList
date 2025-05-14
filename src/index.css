@@ -1,0 +1,51 @@
+div img{
+    height: 140px;
+    width: 140px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+body{
+    background: #833AB4;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.hoverazo:hover{
+    cursor: pointer;
+    animation: 0.5s giro ease-in forwards;
+}
+.hoverazo{
+    color: grey;
+}
+
+@keyframes giro{
+    0% {
+        transform: rotateY(0deg)
+        
+    }
+    25%{
+        transform: rotateY(60deg)
+    }
+
+    50%{
+        transform: rotateY(180deg)
+    }
+    75%{
+        transform: rotateY(240deg)
+    }
+    99%{
+        transform: rotateY(360deg)
+    }
+    100%{
+        transform: scale(1.2);
+    }
+   
+}
+ label{
+    color: white;
+ }
+
+ .charizard:hover{
+filter: brightness(130%);
+transform: scale(1.005);
+ }
